@@ -191,7 +191,7 @@ void test01()
 
 
 
-	printf("Çå¿ÕL");
+	printf("Çå¿ÕL\n");
 	ClearList(L);
 	ListShow_Sq(L);
 
