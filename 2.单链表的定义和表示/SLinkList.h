@@ -3,6 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <iostream>
+
+using std::cin;
+
 
 //函数结果状态代码 
 #define TRUE 1
@@ -10,10 +14,10 @@
 #define OK 1
 #define ERROR 0
 #define INFEASIBLE -1
-#define OVERFLOW -2
+//#define OVERFLOW -2
 //Status 是函数的类型，其值是函数结果状态代码
 typedef int Status;
-typedef char ElemType;
+typedef int ElemType;
 
 typedef struct Lnode
 {
@@ -73,23 +77,56 @@ Status GetElem_L(LinkList &L, int i, ElemType &e);
 
 /**
 查找按值:根据指定数据获取数据所在位置
-
+【算法步骤】
+1.从第一个结点起，依次和e相比较。
+2.如果找到一个其值与e相等的数据元素，则返回其在链表中的“位置”或
+地址；
+3.如果查遍整个链表都没有找到其值和e相等的元素，则返回0或
+"NULL"。
  */
+int  LocateELem_L(LinkList L, ElemType e);
 
- /**
- 查找按位置;
- */
 
 /**
-插入
+插入: 在L中第1个元素之前插入数据元素e
+【算法步骤】
+1、首先找到ai-1的存储位置p。
+2、生成一个数据域为e的新结点s。
+3、插入新结点：
+	①新结点的指针域指向结点ai
+	②结点ai-1的指针域指向新结点
  */
+Status Listlnsert_L(LinkList &L, int i, ElemType e);
+
+
 
 /**
-删除
+删除:删除第i个节点
+【算法步骤】
+1、首先找到ai-1的存储位置p,保存要删除的ai的值。
+2、令p->next指向ai+1。
+3、释放结点a的空间。
  */
+Status ListDelete_L(LinkList &L, int i, ElemType &e);
 
 /**
 建立：
-头插
+头插:建立单链表：头插法——元素插入在链表头部,也叫前插法
+【算法】
+1.从一个空表开始，重复读入数据
+2.生成新结点，将读入数据存放到新结点的数据域中
+3.从最后一个结点开始，依次将各结点插入到链表的前端
 尾插
  */
+void CreateList_H(LinkList &L, int n);
+
+/**
+建立单链表：尾插法——元素插入在链表尾部
+1.从一个空表L开始，将新结点逐个插入到链表的尾部，尾指针r指向链表
+的尾结点。
+2.初始时，r同L均指向头结点。每读入一个数据元素则申请一个新结点，
+将新结点插入到尾结点后，r指向新结点。
+*/
+void CreateList_R(LinkList &L, int n);
+
+void ShowLinkList_Lint(LinkList L);
