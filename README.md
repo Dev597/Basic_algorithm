@@ -3,12 +3,7 @@
 
 目前正在进行中。请稍等
 
-
-
-
-
-------
-
+-----
 # 数据结构
 
 ## 1. 引入
@@ -64,7 +59,7 @@
 
 定义：由n(n≥O)个数据特性相同的元素构成的有限序列称为线性表。
 
-![image-20220621204411759](README.assets/image-20220621204411759.png)
+![image-20220621204411759](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621204411759.png)
 
 特点：
 
@@ -124,7 +119,7 @@ ListTraverse(&L,visited())  线性表遍历   线性表存在
 
 线性表的第1个数据元素a1的存储位置称为线性表的起始位置或基地址
 
-![image-20220621213621098](README.assets/image-20220621213621098.png)
+![image-20220621213621098](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621213621098.png)
 
 计算地址只算一次与处理数据的规模无关数量级是O(1)这种运算叫随机存取。
 
@@ -440,7 +435,7 @@ int main()
 
 查找算法的基本操作:将记录的关键字同给定值进行比较(L.elem==e)
 
-![image-20220621215405386](README.assets/image-20220621215405386.png)
+![image-20220621215405386](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621215405386.png)
 
 比较的次数与输入的定值e有关(假设7个数字出现的概率均为1/7)
 当e=a，1次；当e=b，2次；当e=c，3次；...e=g,7次
@@ -448,18 +443,18 @@ int main()
 
 在查找时，为确定元素在顺序表中的位置，需和给定值进行比较的数据元素个数的期望值称为查找算法在查找成功时的**平均查找长度(AverageSearch Length, ASL)**。
 
-![image-20220621215538549](README.assets/image-20220621215538549.png)
+![image-20220621215538549](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621215538549.png)
 
 
 
 查找第一个元素仅需比较一次；而查找表中最后一个记录时，则需比较n次。一般情况下C,等于
 假设每个元素的查找概率相等，即
 P1=1/n
-![image-20220621215641449](README.assets/image-20220621215641449.png)
+![image-20220621215641449](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621215641449.png)
 
 由此可见，顺序表按值查找算法的平均时间复杂度为O(n)。
 
-![image-20220625153016290](README.assets/image-20220625153016290.png)
+![image-20220625153016290](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220625153016290.png)
 
 
 
@@ -468,17 +463,17 @@ P1=1/n
 插入位置在最后在线性表的最后添加一个元素不需要移动直接添加
 插入位置在最前在原线性表的第1个元素之前插入一个新的元素，线性表的所有元素都要移动移动次数最多
 
-![image-20220621215833758](README.assets/image-20220621215833758.png)
+![image-20220621215833758](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621215833758.png)
 
-![image-20220625153035867](README.assets/image-20220625153035867.png)
+![image-20220625153035867](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220625153035867.png)
 
 
 
 3.删除算法
 
-![image-20220621215942534](README.assets/image-20220621215942534.png)
+![image-20220621215942534](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621215942534.png)
 
-![image-20220625153051316](README.assets/image-20220625153051316.png)
+![image-20220625153051316](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220625153051316.png)
 
 线性表小结：
 
@@ -547,13 +542,13 @@ P1=1/n
 
   结点只有一个指针域的链表称为单链表或线性链表
 
-  ![image-20220621220712323](README.assets/image-20220621220712323.png)
+  ![image-20220621220712323](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621220712323.png)
 
 - 双向链表
 
   结点有两个指针域的链表称为双链表
 
-  ![image-20220621220729542](README.assets/image-20220621220729542.png)
+  ![image-20220621220729542](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621220729542.png)
 
   
 
@@ -561,12 +556,12 @@ P1=1/n
 
   首尾相接的链表叫循环链表
 
-  ![image-20220621220746863](README.assets/image-20220621220746863.png)
+  ![image-20220621220746863](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220621220746863.png)
 
 
 带头节点和不带头节点两种形式
 
-![image-20220625153243716](README.assets/image-20220625153243716.png)
+![image-20220625153243716](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220625153243716.png)
 
 如何表示空表
 
@@ -619,35 +614,8 @@ P1=1/n
 - 单链表的建立
   头插法时间复杂度O(n)
 
-![image-20220626132651571](README.assets/image-20220626132651571.png)
+![image-20220626132651571](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220626132651571.png)
 
 ​		尾插法时间复杂度O(n)
 
-![image-20220628201450471](README.assets/image-20220628201450471.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image-20220628201450471](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220628201450471.png)
