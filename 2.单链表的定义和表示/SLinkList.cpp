@@ -270,7 +270,7 @@ void test03()
 int main()
 {
 	//test01();
-	test03();
+	test03(); 
 	system("pause");
 	return EXIT_SUCCESS;
 
