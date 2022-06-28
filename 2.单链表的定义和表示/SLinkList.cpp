@@ -234,9 +234,43 @@ void test01()
 	
 }
 
+void test02()
+{
+	LinkList L;
+
+	CreateList_R(L, 3);
+	
+	ShowLinkList_Lint(L);
+	Listlnsert_L(L, 3, 6);
+	Listlnsert_L(L, 3, 6);
+	Listlnsert_L(L, 3, 6);
+	ShowLinkList_Lint(L);
+	if (DestroyList_L(L))
+	{
+		printf("链表已销毁\n");
+	}
+}
+
+void test03()
+{
+	LinkList L;
+
+	CreateList_H(L, 3);
+
+	ShowLinkList_Lint(L);
+	Listlnsert_L(L, 3, 6);
+	Listlnsert_L(L, 3, 6);
+	Listlnsert_L(L, 3, 6);
+	ShowLinkList_Lint(L);
+	if (DestroyList_L(L))
+	{
+		printf("链表已销毁\n");
+	}
+}
 int main()
 {
-	test01();
+	//test01();
+	test03();
 	system("pause");
 	return EXIT_SUCCESS;
 
