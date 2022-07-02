@@ -6,6 +6,8 @@
 #include <iostream>
 
 using std::cin;
+using std::cout;
+using std::endl;
 
 
 //函数结果状态代码 
@@ -14,7 +16,7 @@ using std::cin;
 #define OK 1
 #define ERROR 0
 #define INFEASIBLE -1
-#define OVERFLOW -2
+//#define OVERFLOW -2
 //Status 是函数的类型，其值是函数结果状态代码
 typedef int Status;
 typedef int ElemType;

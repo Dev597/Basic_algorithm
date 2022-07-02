@@ -98,17 +98,17 @@ int  LocateELem_L(LinkList L, ElemType e)
 
 Status Listlnsert_L(LinkList &L, int i, ElemType e)
 {
-	Lnode *p = L;
-	int j = 0;
-	while (p && j < i-1)
+	Lnode *p = L->next;
+
+	int j = 1;
+	//初始化
+	while (p && j < i)
 	{
 		p = p->next;
 		++j;
 	}
-	if (!p || j > i - 1)
-	{
-		return ERROR; 
-	}
+	if (!p || j > i)return ERROR;//第i个元素不存在
+
 	Lnode *s = new Lnode;
 	s->data = e;
 	s->next = p->next;
@@ -258,6 +258,7 @@ void test03()
 	CreateList_H(L, 3);
 
 	ShowLinkList_Lint(L);
+
 	Listlnsert_L(L, 3, 6);
 	Listlnsert_L(L, 3, 6);
 	Listlnsert_L(L, 3, 6);
@@ -269,9 +270,8 @@ void test03()
 }
 int main()
 {
-	//test01();
-	test03(); 
-	system("pause");
-	return EXIT_SUCCESS;
+	test01();
+	//test03(); 
+ 	return EXIT_SUCCESS;
 
 }
