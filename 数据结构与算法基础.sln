@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.线性表的顺序存储�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.单链表的定义和表示", "2.单链表的定义和表示\2.单链表的定义和表示.vcxproj", "{102B57BE-E7D8-4107-9C8E-DA9B83102666}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.双向链表的定义和表示", "3.双向链表的定义和表示\3.双向链表的定义和表示.vcxproj", "{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{102B57BE-E7D8-4107-9C8E-DA9B83102666}.Release|x64.Build.0 = Release|x64
 		{102B57BE-E7D8-4107-9C8E-DA9B83102666}.Release|x86.ActiveCfg = Release|Win32
 		{102B57BE-E7D8-4107-9C8E-DA9B83102666}.Release|x86.Build.0 = Release|Win32
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Debug|x64.ActiveCfg = Debug|x64
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Debug|x64.Build.0 = Debug|x64
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Debug|x86.Build.0 = Debug|Win32
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x64.ActiveCfg = Release|x64
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x64.Build.0 = Release|x64
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x86.ActiveCfg = Release|Win32
+		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
