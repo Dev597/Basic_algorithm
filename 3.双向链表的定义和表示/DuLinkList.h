@@ -55,6 +55,7 @@ int  LocateELem_Du(DuLinkList L, ElemType e);
 Status Listlnsert_Du(DuLinkList &L, int i, ElemType e);
 
 Status Headlnsert_Du(DuLinkList &L, ElemType e);
+Status Taillnsert_Du(DuLinkList &L, ElemType e);
 
 
 Status ListDelete_Du(DuLinkList &L, int i, ElemType &e);

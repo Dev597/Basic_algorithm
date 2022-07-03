@@ -137,6 +137,24 @@ Status Headlnsert_Du(DuLinkList &L, ElemType e)
 
 }
 
+Status Taillnsert_Du(DuLinkList &L, ElemType e)
+{
+
+	DuLNode* p = L;
+	while (p->next != L) {
+		p = p->next;
+	}
+	DuLNode* s = new DuLNode;
+	s->data = e;
+	s->prior = p;
+	s->next = L;
+
+	L->prior = s;
+	p->next = s;
+	return OK;
+
+}
+
 Status ListDelete_Du(DuLinkList &L, int i, ElemType &e)
 {
 	DuLNode * p = L;
@@ -195,13 +213,16 @@ void test01()
 	Headlnsert_Du(M, 6);
 	ShowLinkList_Du(M);
 
+	printf("使用尾插法添加7后链表为\n");
+	Taillnsert_Du(M, 7);
+	ShowLinkList_Du(M);
 
 	ClearList_Du(M);
 	if (ListEmpty_Du(M))
 	{
 		cout << "链表已经清空" << endl;
 	}
-	DestroyList_Du(M);
+	//DestroyList_Du(M);
 
 }
 int main()
