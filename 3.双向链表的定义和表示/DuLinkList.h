@@ -16,7 +16,7 @@ using std::endl;
 #define OK 1
 #define ERROR 0
 #define INFEASIBLE -1
-//#define OVERFLOW -2
+
 //Status 是函数的类型，其值是函数结果状态代码
 typedef int Status;
 typedef int ElemType;
@@ -54,7 +54,7 @@ int  LocateELem_Du(DuLinkList L, ElemType e);
 
 Status Listlnsert_Du(DuLinkList &L, int i, ElemType e);
 
-
+Status Headlnsert_Du(DuLinkList &L, ElemType e);
 
 
 Status ListDelete_Du(DuLinkList &L, int i, ElemType &e);

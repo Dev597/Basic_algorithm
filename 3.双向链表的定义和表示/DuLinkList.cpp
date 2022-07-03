@@ -3,13 +3,14 @@
 Status InitList_Du(DuLinkList &L)
 {
 	L = new DuLNode;
-	L->next = L->prior = NULL;
+	L->data = 0;
+	L->next = L->prior = L;
 	return OK;
 }
 
 int ListEmpty_Du(DuLinkList L)
 {
-	if (L->next == L->prior)
+	if (L->next == L && L->prior == L)
 	{
 		return 1;
 	}
@@ -22,12 +23,16 @@ int ListEmpty_Du(DuLinkList L)
 Status DestroyList_Du(DuLinkList &L)//销毁单链表L
 {
 	DuLNode * p;
-	while (L)
+	DuLNode * q;
+	p = L->next;
+	while (p && p != L)
 	{
-		p = L;
-		L = L->next;
+		q = p->next;
 		delete p;
+		p = q;
 	}
+	L->prior = L->next = L;
+	delete L;
 	return OK;
 }
 
@@ -36,13 +41,13 @@ Status ClearList_Du(DuLinkList &L)
 	DuLNode * p;
 	DuLNode * q;
 	p = L->next;
-	while (p)
+	while (p && p != L)
 	{
 		q = p->next;
 		delete p;
 		p = q;
 	}
-	L->prior = L->next = NULL;
+	L->prior = L->next = L;
 	return OK;
 
 }
@@ -51,7 +56,7 @@ int ListLength_Du(DuLinkList &L)
 {
 	DuLNode * p = L->next;
 	int i = 0;
-	while (p)
+	while (p && p!=L)
 	{
 		p = p->next;
 		i++;
@@ -118,6 +123,20 @@ Status Listlnsert_Du(DuLinkList &L, int i, ElemType e)
 	return OK;
 }
 
+Status Headlnsert_Du(DuLinkList &L, ElemType e)
+{
+	DuLNode *s = new DuLNode;
+	s->data = e;
+
+	s->next = L->next;
+	s->prior = L->prior;
+
+	L->next->prior = s;
+	L->next = s;
+	return OK;
+
+}
+
 Status ListDelete_Du(DuLinkList &L, int i, ElemType &e)
 {
 	DuLNode * p = L;
@@ -141,7 +160,7 @@ Status ListDelete_Du(DuLinkList &L, int i, ElemType &e)
 void ShowLinkList_Du(DuLinkList L)
 {
 	DuLNode *p = L->next;
-	while (p)
+	while (p && p != L)
 	{
 		printf("%d, ", p->data);
 		p = p->next;
@@ -157,6 +176,7 @@ void test01()
 	{
 		printf("链表初始化完成\n");
 	}
+
 	Listlnsert_Du(M, 1, 1);
 	Listlnsert_Du(M, 2, 3);
 	Listlnsert_Du(M, 3, 4);
@@ -168,10 +188,12 @@ void test01()
 
 	ElemType elem = 0;
 	ListDelete_Du(M, 1, elem);
-	printf("删除第一个元素%d", elem);
-	cout << "后的链表为";
+	printf("删除第一个元素%d  后链表为\n", elem);
 	ShowLinkList_Du(M);
 
+	printf("使用头插法添加6后链表为\n");
+	Headlnsert_Du(M, 6);
+	ShowLinkList_Du(M);
 
 
 	ClearList_Du(M);

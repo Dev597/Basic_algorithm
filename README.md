@@ -673,11 +673,6 @@ while(p)--------->while(p!=L)
 while(p->next)--->while(p->next!=L)
 ~~~
 
-循环链表的合并
-
-```c
-```
-
 
 
 #### 双向链表
@@ -717,7 +712,7 @@ while(p->next)--->while(p->next!=L)
 
 **单链表、循环链表和双向链表的时间效率比较**
 
-![image-20220702184359102](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220702184359102.png)
+![image-20220702184359102](C:/Users/Dev/Desktop/image-20220702184359102.png)
 
 **顺序表和链表的比较**
 
@@ -734,10 +729,5 @@ while(p->next)--->while(p->next!=L)
 > 所占的存储量之比，即：
 > 存储密度=-结点数据本身占用的空间  /  结点占用的空间总量 
 
-![image-20220702191024616](https://raw.githubusercontent.com/Dev597/mypic/master/image-20220702191024616.png)
+![image-20220702191024616](https://cdn.jsdelivr.net/gh/dev597/mypic/4616.png)
 
-### 线性表的应用
-
-线性表的合并
-
-有序表的合并
