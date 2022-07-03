@@ -3,13 +3,13 @@
 Status InitList_Du(DuLinkList &L)
 {
 	L = new DuLNode;
-	L->next = L->prior= NULL;
+	L->next = L->prior = NULL;
 	return OK;
 }
 
 int ListEmpty_Du(DuLinkList L)
 {
-	if (L->next == L && L->next == L)
+	if (L->next == L->prior)
 	{
 		return 1;
 	}
@@ -23,7 +23,7 @@ Status DestroyList_Du(DuLinkList &L)//销毁单链表L
 {
 	DuLNode * p;
 	while (L)
-	{ 
+	{
 		p = L;
 		L = L->next;
 		delete p;
@@ -49,7 +49,7 @@ Status ClearList_Du(DuLinkList &L)
 
 int ListLength_Du(DuLinkList &L)
 {
-	DuLNode * p= L->next;
+	DuLNode * p = L->next;
 	int i = 0;
 	while (p)
 	{
@@ -97,80 +97,44 @@ int  LocateELem_Du(DuLinkList L, ElemType e)
 
 Status Listlnsert_Du(DuLinkList &L, int i, ElemType e)
 {
-	if (i == 1)
-	{
-		DuLNode *s = new DuLNode;
-		s->data = e;
-		s->next = NULL;
-		s->prior = L;
-		return OK;
-	}
 
-	/**
-	 * DuLNode * p = L->next;
-	int j = 1;
+
+	DuLNode * p = L;
+	int j = 0;
 	//初始化
-	while (p && j < i)
+	while (p->next && j < i - 1)
 	{
 		p = p->next;
 		++j;
 	}
-	if (!p || j > i)return ERROR;//第i个元素不存在
-	 */
-	
-	/*DuLNode * p = L->next;
-	int j = 1;
-	//初始化
-	while (p && j < i)
-	{
-		p = p->next;
-		++j;
-	}
-	if (!p || j > i - 1)
-	{
-		return ERROR;
-	}//第i个元素不存在
-
-	*/
-
-	DuLNode *p = L->next;
-
-	int j = 1;
-	//初始化
-	while (p && j < i)
-	{
-		p = p->next;
-		++j;
-	}
-	if (!p || j > i)return ERROR;//第i个元素不存在
 
 	DuLNode *s = new DuLNode;
 	s->data = e;
 
-	s->prior = p->prior;
-	p->prior->next = s;
-	s->next = p;
-	p->prior = s;
+	s->next = p->next;
+	s->prior = p;
+	p->next = s;
+	p->next->prior = s;
 	return OK;
-
 }
 
 Status ListDelete_Du(DuLinkList &L, int i, ElemType &e)
 {
-	DuLNode * p = L->next;
-
-	int j = 1;
-	if (p && j < i)
+	DuLNode * p = L;
+	int j = 0;
+	//初始化
+	while (p->next && j < i - 1)
 	{
 		p = p->next;
-		j++;
+		++j;
 	}
-	if (!p || j > i)return ERROR;//第i个元素不存在
-	e = p->data;
+	DuLNode * pfree = p->next;
+	e = pfree->data;
 
-	p->prior->next = p->next;
-	p->next->prior = p->prior;
-	delete p;
+	p->next = p->next->next;
+	p->next->next->prior = p;
+
+	delete pfree;
 	return OK;
 }
 
