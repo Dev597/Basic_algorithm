@@ -7,7 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.线性表的顺序存储�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.单链表的定义和表示", "2.单链表的定义和表示\2.单链表的定义和表示.vcxproj", "{102B57BE-E7D8-4107-9C8E-DA9B83102666}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.双向链表的定义和表示", "3.双向链表的定义和表示\3.双向链表的定义和表示.vcxproj", "{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.双向循环链表的定义和表示", "3.双向链表的定义和表示\3.双向链表的定义和表示.vcxproj", "{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.顺序栈", "4.栈的定义和表示\4.栈的定义和表示.vcxproj", "{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.链栈", "链栈\链栈.vcxproj", "{36543859-AAFA-4D44-9A49-2BF559C9727D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,22 @@ Global
 		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x64.Build.0 = Release|x64
 		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x86.ActiveCfg = Release|Win32
 		{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}.Release|x86.Build.0 = Release|Win32
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Debug|x64.ActiveCfg = Debug|x64
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Debug|x64.Build.0 = Debug|x64
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Debug|x86.ActiveCfg = Debug|Win32
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Debug|x86.Build.0 = Debug|Win32
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Release|x64.ActiveCfg = Release|x64
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Release|x64.Build.0 = Release|x64
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Release|x86.ActiveCfg = Release|Win32
+		{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}.Release|x86.Build.0 = Release|Win32
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Debug|x64.ActiveCfg = Debug|x64
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Debug|x64.Build.0 = Debug|x64
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Debug|x86.ActiveCfg = Debug|Win32
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Debug|x86.Build.0 = Debug|Win32
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Release|x64.ActiveCfg = Release|x64
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Release|x64.Build.0 = Release|x64
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Release|x86.ActiveCfg = Release|Win32
+		{36543859-AAFA-4D44-9A49-2BF559C9727D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
