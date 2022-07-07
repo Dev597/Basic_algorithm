@@ -41,7 +41,7 @@ void Clear(PLinkQueue QQ)
 // 元素入队，返回值：0-失败；1-成功。
 int InQueue(PLinkQueue QQ, ElemType *ee)
 {
-	if (QQ == NULL || *ee == NULL)return;
+	if (QQ == NULL || *ee == NULL)return ERROR;
 	if (QQ->front ==  NULL)
 	{
 		printf("队列未初始化\n");
@@ -79,7 +79,7 @@ void PrintQueue(PLinkQueue QQ)
 // 求队列的长度，返回值：>=0-队列QQ元素的个数。
 int  Length(PLinkQueue QQ)
 {
-	if (QQ == NULL)return;
+	if (QQ == NULL)return ERROR;
 	if (QQ->front == NULL)
 	{
 		return 0;
@@ -97,10 +97,11 @@ int  Length(PLinkQueue QQ)
 // 判断队列是否为空，返回值：1-空，0-非空或失败。
 int  IsEmpty(PLinkQueue QQ)
 {
-	if (QQ == NULL)return;
+	if (QQ == NULL)return ERROR;
 	if (QQ->front == NULL)
 	{
 		printf("队列未初始化\n");
+		return ERROR;
 	}
 	if (QQ->front->next == NULL)
 	{
@@ -112,22 +113,34 @@ int  IsEmpty(PLinkQueue QQ)
 // 元素出队，返回值：0-失败；1-成功。
 int OutQueue(PLinkQueue QQ, ElemType *ee)
 {
-	if (QQ == NULL || *ee == NULL)return;
+	if (QQ == NULL || *ee == NULL)return ERROR;
 	if (QQ->front == NULL)
 	{
 		printf("队列未初始化\n");
 	}
 	if (IsEmpty(QQ) == 1) { printf("队列为空。\n"); return 0; }
 	LNode * p = QQ->front->next;
-	memcpy(ee, &QQ->front->data, sizeof ElemType);
-	QQ->front = QQ->front->next;
-	if (QQ->rear == p);
+	memcpy(ee, &p->data, sizeof ElemType);
+	QQ->front->next = p->next;
+	if (QQ->rear == p) QQ->rear = QQ->front;
+	delete p;
+	return OK;
 
 }
 
 // 获取队头元素，返回值：0-失败；1-成功。
 // 只查看队头元素的值，元素不出队。
-int GetHead(PLinkQueue QQ, ElemType *ee);
+int GetHead(PLinkQueue QQ, ElemType *ee)
+{
+	if (QQ == NULL || *ee == NULL)return ERROR;
+	if (QQ->front == NULL)
+	{
+		printf("队列未初始化\n");
+	}
+	if (IsEmpty(QQ) == 1) { printf("队列为空。\n"); return 0; }
+	memcpy(ee, &QQ->front->next->data, sizeof ElemType);
+	return OK;
+}
 
 
 
