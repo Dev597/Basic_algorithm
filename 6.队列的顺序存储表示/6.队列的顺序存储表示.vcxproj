@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E90C91D7-C3ED-4DFC-97AD-1A193C293616}</ProjectGuid>
+    <ProjectGuid>{A7E0B7BD-4C98-4DA7-81C0-27E9D876A757}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My6队列</RootNamespace>
+    <RootNamespace>My6队列的顺序存储表示</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>6.队列顺序存储的表示和表示</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,10 +146,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SeqQueue.cpp" />
+    <ClInclude Include="SeqQueue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SeqQueue.h" />
+    <ClCompile Include="SeqQueue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

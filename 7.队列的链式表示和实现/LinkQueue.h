@@ -11,10 +11,9 @@
 #define OK 1
 #define ERROR 0
 #define INFEASIBLE -1
-#define MAXSIZE 20
 //Status 是函数的类型，其值是函数结果状态代码
 typedef int Status;
-#define MAXSIZE 10       // 循环队列的最大长度，最多可以存放MAXSIZE个元素。
+
 
 typedef int ElemType;    // 自定义循环队列的数据元素为整数。
 typedef struct LNode
