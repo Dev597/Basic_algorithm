@@ -13,12 +13,17 @@ int InitQueue(PLinkQueue QQ)
 // 销毁队列QQ。
 void DestroyQueue(PLinkQueue QQ)
 {
-	if (QQ == NULL)return ;
-	Clear(QQ);
-	if (QQ)
+	if (QQ == NULL)return;
+	LNode *p = QQ->front;
+	LNode *q ;
+	while (p)
 	{
-		delete QQ;
+		q = p->next;
+		delete p;
+		p = q;
 	}
+	QQ->front = QQ->rear = NULL;  // 防止野指针。
+	return;
 }
 
 // 清空队列。
