@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\5.链栈\LinkStack.h">
+    <ClInclude Include="LinkStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\5.链栈\LinkStack.cpp">
+    <ClCompile Include="LinkStack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

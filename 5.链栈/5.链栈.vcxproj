@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{36543859-AAFA-4D44-9A49-2BF559C9727D}</ProjectGuid>
+    <ProjectGuid>{C0B8B4C7-A3AF-42ED-A69F-F297EE19B32E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>链栈</RootNamespace>
+    <RootNamespace>My5链栈</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>5.链栈</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,10 +146,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkStack.cpp" />
+    <ClInclude Include="LinkStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkStack.h" />
+    <ClCompile Include="LinkStack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

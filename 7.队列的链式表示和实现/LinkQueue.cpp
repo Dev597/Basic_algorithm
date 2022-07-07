@@ -113,6 +113,7 @@ int  IsEmpty(PLinkQueue QQ)
 		printf("队列为空\n");
 		return OK;
 	}
+	return ERROR;
 }
 
 // 元素出队，返回值：0-失败；1-成功。
