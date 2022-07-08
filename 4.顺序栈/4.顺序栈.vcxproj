@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F34FA9EC-2C1E-4347-AB0D-43F2237A1414}</ProjectGuid>
+    <ProjectGuid>{A86A9E87-CA19-4F81-BE4B-C6157E328EA4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My4栈的定义和表示</RootNamespace>
+    <RootNamespace>My4顺序栈</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>4.顺序栈</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,10 +146,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SeqStack.cpp" />
+    <ClInclude Include="SeqStack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SeqStack.h" />
+    <ClCompile Include="SeqStack.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

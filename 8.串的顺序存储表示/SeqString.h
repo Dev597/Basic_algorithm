@@ -14,9 +14,10 @@
 //Status 是函数的类型，其值是函数结果状态代码
 typedef int Status;
 
-typedef struct 
+typedef struct String
 {
-	char data[MAXSIZE];
+	//char data[MAXSIZE];
+	char *data;
 	unsigned int length;//字符串的实际长度。
 }myString;
 
@@ -47,3 +48,8 @@ Status Strlnsert(myString &S, int pos, myString T);//子串插入
 Status StrDelete(myString &S,int  pos, int  len);//子串删除
 
 Status DestroyString(myString &S);//串销毁
+
+
+
+String *initString();
+Status StrAssign(myString *S, char *data);
