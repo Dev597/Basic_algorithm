@@ -55,18 +55,28 @@ void preOrder(TreeNode* T)
 		preOrder(T->rchild);
 	}
 }
-
+void inOrder(TreeNode* T)
+{
+	if (T)
+	{
+		preOrder(T->lchild);
+		printf("%d ", T->data);
+		preOrder(T->rchild);
+	}
+}
 
 
 void test01()
 {
 	TreeNode* T = NULL;
-	int nums[6] = { 8, 6, 10, 9, 11, 23 };
+	int nums[6] = { 4, 5, 19, 23, 2, 8 };
 	for (int i = 0; i < 6; i++) 
 	{
 		bstInsert(&T, nums[i]);
 	}
 	preOrder(T);
+	printf("\n");
+	inOrder(T);
 	printf("\n");
 }
 
