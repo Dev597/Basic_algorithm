@@ -156,7 +156,7 @@ void test01()
 		visited[i] = 0;
 	BFS(G, visited, 0);
 	printf("\n");
-}
+} 
 
 
 
