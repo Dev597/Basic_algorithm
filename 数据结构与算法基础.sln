@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1.线性表的顺序存储表示", "1.顺序表的顺序存储表示\1.顺序表的顺序存储表示.vcxproj", "{0BD8465E-9EC6-4418-8D5C-84261583AD8C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.线性表的顺序存储表示", "1.顺序表的顺序存储表示\1.顺序表的顺序存储表示.vcxproj", "{0BD8465E-9EC6-4418-8D5C-84261583AD8C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.单链表的定义和表示", "2.单链表的定义和表示\2.单链表的定义和表示.vcxproj", "{102B57BE-E7D8-4107-9C8E-DA9B83102666}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.单链表的定义和表示", "2.单链表的定义和表示\2.单链表的定义和表示.vcxproj", "{102B57BE-E7D8-4107-9C8E-DA9B83102666}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.双向循环链表的定义和表示", "3.双向链表的定义和表示\3.双向链表的定义和表示.vcxproj", "{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.双向循环链表的定义和表示", "3.双向链表的定义和表示\3.双向链表的定义和表示.vcxproj", "{B4C50E5D-60F5-45DE-97DF-CBE205B5ECD2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7.队列的链式表示和实现", "7.队列的链式表示和实现\7.队列的链式表示和实现.vcxproj", "{C1CA77D9-D22C-4B1C-9A6A-E3BB41F4383C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.队列的链式表示和实现", "7.队列的链式表示和实现\7.队列的链式表示和实现.vcxproj", "{C1CA77D9-D22C-4B1C-9A6A-E3BB41F4383C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6.队列的顺序存储表示", "6.队列的顺序存储表示\6.队列的顺序存储表示.vcxproj", "{A7E0B7BD-4C98-4DA7-81C0-27E9D876A757}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.队列的顺序存储表示", "6.队列的顺序存储表示\6.队列的顺序存储表示.vcxproj", "{A7E0B7BD-4C98-4DA7-81C0-27E9D876A757}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.链栈", "5.链栈\5.链栈.vcxproj", "{C0B8B4C7-A3AF-42ED-A69F-F297EE19B32E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05.链栈", "5.链栈\5.链栈.vcxproj", "{C0B8B4C7-A3AF-42ED-A69F-F297EE19B32E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "8.串的顺序存储表示", "8.串的顺序存储表示\8.串的顺序存储表示.vcxproj", "{ABF70C93-4401-4C69-99C8-5E1B9A5FF2A7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.串的顺序存储表示", "8.串的顺序存储表示\8.串的顺序存储表示.vcxproj", "{ABF70C93-4401-4C69-99C8-5E1B9A5FF2A7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.顺序栈", "4.顺序栈\4.顺序栈.vcxproj", "{A86A9E87-CA19-4F81-BE4B-C6157E328EA4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.顺序栈", "4.顺序栈\4.顺序栈.vcxproj", "{A86A9E87-CA19-4F81-BE4B-C6157E328EA4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9.二叉树", "9.二叉树\9.二叉树.vcxproj", "{3F198F77-A873-4C4A-9FC4-62FCD54A662A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09.二叉树", "9.二叉树\9.二叉树.vcxproj", "{3F198F77-A873-4C4A-9FC4-62FCD54A662A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10.线索二叉树", "10.线索二叉树\10.线索二叉树.vcxproj", "{84040DCD-C98F-4FB3-879F-B4A832B1186D}"
 EndProject
@@ -30,6 +30,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.哈夫曼树", "13.哈夫曼树\13.哈夫曼树.vcxproj", "{DCFE6F72-AFEA-441C-807B-30D4C7B253F5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14.图(邻接矩阵)(BFS+DFS)", "14.图(邻接矩阵)(BFS+DFS)\14.图(邻接矩阵)(BFS+DFS).vcxproj", "{345AD4E0-BDDB-41F2-B357-611A48E64F16}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15.prim普利姆最小生成树", "15.prim普利姆最小生成树\15.prim普利姆最小生成树.vcxproj", "{93E8D0DD-EABD-410A-86EA-1B058F282C65}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16.kruskal克鲁斯卡尔最小生成树", "16.cruskal克鲁斯卡尔最小生成树\16.cruskal克鲁斯卡尔最小生成树.vcxproj", "{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17.dijkstra最短路径", "17.dijkstra最短路径\17.dijkstra最短路径.vcxproj", "{DEDCDF9A-8C53-4929-A913-520EA7746C4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18.floyd最短路径", "18.floyd最短路径\18.floyd最短路径.vcxproj", "{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +159,38 @@ Global
 		{345AD4E0-BDDB-41F2-B357-611A48E64F16}.Release|x64.Build.0 = Release|x64
 		{345AD4E0-BDDB-41F2-B357-611A48E64F16}.Release|x86.ActiveCfg = Release|Win32
 		{345AD4E0-BDDB-41F2-B357-611A48E64F16}.Release|x86.Build.0 = Release|Win32
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Debug|x64.ActiveCfg = Debug|x64
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Debug|x64.Build.0 = Debug|x64
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Debug|x86.ActiveCfg = Debug|Win32
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Debug|x86.Build.0 = Debug|Win32
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Release|x64.ActiveCfg = Release|x64
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Release|x64.Build.0 = Release|x64
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Release|x86.ActiveCfg = Release|Win32
+		{93E8D0DD-EABD-410A-86EA-1B058F282C65}.Release|x86.Build.0 = Release|Win32
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Debug|x64.ActiveCfg = Debug|x64
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Debug|x64.Build.0 = Debug|x64
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Debug|x86.ActiveCfg = Debug|Win32
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Debug|x86.Build.0 = Debug|Win32
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Release|x64.ActiveCfg = Release|x64
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Release|x64.Build.0 = Release|x64
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Release|x86.ActiveCfg = Release|Win32
+		{1384B3B1-6007-4E08-B9EB-342A4F1F1FB6}.Release|x86.Build.0 = Release|Win32
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Debug|x64.ActiveCfg = Debug|x64
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Debug|x64.Build.0 = Debug|x64
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Debug|x86.Build.0 = Debug|Win32
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Release|x64.ActiveCfg = Release|x64
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Release|x64.Build.0 = Release|x64
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Release|x86.ActiveCfg = Release|Win32
+		{DEDCDF9A-8C53-4929-A913-520EA7746C4A}.Release|x86.Build.0 = Release|Win32
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Debug|x64.ActiveCfg = Debug|x64
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Debug|x64.Build.0 = Debug|x64
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Debug|x86.ActiveCfg = Debug|Win32
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Debug|x86.Build.0 = Debug|Win32
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Release|x64.ActiveCfg = Release|x64
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Release|x64.Build.0 = Release|x64
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Release|x86.ActiveCfg = Release|Win32
+		{8582E019-4BBD-4DE3-85B0-C02E6302B3E6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
